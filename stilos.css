@@ -1,0 +1,523 @@
+@font-face {
+   
+    font-family: "Noteworthy Bold";
+    src: url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.eot");
+    src: url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9dcd9bfdf31896795fd48e13ea7ba53f.svg#Webcomic Bros")format("svg");
+}
+
+
+body{
+    margin: 0;
+    background-color: rgb(215, 215, 180);
+    font-family: "Noteworthy Bold";
+}
+.banner{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+#imagenBaner{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    justify-content: center;
+}
+#img1{
+    width: 20%;
+}
+
+.btn{
+    font-size: 60px;
+    color: white;
+    transition: 0.3s;
+}
+.btn:hover{
+    color: purple;
+}
+.menuFijo{
+    position: fixed;
+   width: 5%;
+   max-height: 120%;
+   z-index: 20;
+   top: 0%;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   background-color: black;
+height: 100%;
+}
+#opciones{
+  width: 60%;
+filter: invert(100%); 
+padding: 3%;
+
+}
+
+.opciones{
+    margin-top: 300%;
+    margin-left: 10px;
+}
+
+#imgn{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.menu1{
+    margin: 8%;
+    margin-left: 12%;
+}
+.hamburguesa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+
+.menu2{
+    margin: 8%;
+    margin-left: 12%;
+}
+.perros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+
+
+.deleite{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+
+.menu4{
+    margin: 8%;
+    margin-left: 12%;
+}
+.sanchipapa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+
+.menu5{
+    margin: 8%;
+    margin-left: 12%;
+}
+.bebidas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+.menu3{
+    margin: 8%;
+    margin-left: 12%; 
+}
+
+.salchipapa{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 18%;
+    gap: 3%;
+justify-content: center;
+}
+
+
+
+.card {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.face img{
+    width: 10%;
+    height: 10%;
+}
+
+.card .front {
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 13px blue;
+}
+
+
+
+.card .back {
+    background: black;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+
+
+#parte{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 60px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+.parteuno{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#parte:hover{
+    background-color: yellow;
+}
+#secdos{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+
+.sec{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#secdos:hover{
+    background-color: yellow;
+}
+
+#tretres{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+
+.tre{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#tretres:hover{
+    background-color: yellow;
+}
+
+#cuacuatro{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.cua{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#cuacuatro:hover{
+    background-color: yellow;
+}
+#cincinco{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+
+.cin{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#cincinco:hover{
+    background-color: yellow;
+}
+
+#seiseis{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+.HAMBURGUESA{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+}
+.HotDog{
+     font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+}
+
+.salchipapas{
+     font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+} 
+.BEBIDAS{
+     font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+} 
+.titulo{
+     font-size: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+    text-align: center;
+    max-width: 1000px;
+}
+
+
+.sei{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#seiseis:hover{
+    background-color: yellow;
+}
+#siesiete{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+.sie{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#siesiete:hover{
+    background-color: yellow;
+}
+#ochocho{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+
+
+
+
+
+.och{
+margin-top: 9%;
+margin-left: 10px;
+
+}
+
+#ochocho:hover{
+    background-color: yellow;
+}
+#nuenueve{
+    width: 60%;
+    filter: invert(100%); 
+    padding: 3%;
+    transition: 1s;
+    border-radius: 200px;
+    animation: alternate vibrar .5s;
+}
+/* 🎨 Ajuste general imágenes en tarjetas */
+.card .front img,
+#imgn {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ===========================
+   📱 Celulares (pantallas pequeñas)
+   =========================== */
+@media (max-width: 600px) {
+    .hamburguesa,
+    .perros,
+    .deleite,
+    .sanchipapa,
+    .bebidas,
+    .salchipapa {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .titulo {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .hamburguesa,
+    .perros,
+    .deleite,
+    .sanchipapa,
+    .bebidas,
+    .salchipapa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .hamburguesa,
+    .perros,
+    .deleite,
+    .sanchipapa,
+    .bebidas,
+    .salchipapa {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 25px;
+    }
+
+    .card {
+        max-width: 450px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+}
+
+
